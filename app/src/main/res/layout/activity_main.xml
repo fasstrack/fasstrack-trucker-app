@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#000000"
+    >
+
+    <com.here.sdk.mapviewlite.MapViewLite
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="132dp"
+        >
+    </com.here.sdk.mapviewlite.MapViewLite>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/linear_bg"
+        android:padding="4dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ETA_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="ETA : -"
+                android:textColor="#FFF"></TextView>
+
+
+            <TextView
+                android:id="@+id/distance_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="Distance : -"
+                android:textColor="#FFF"></TextView>
+
+            <TextView
+                android:id="@+id/truck_slot_number"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="Your Slot Number: -"
+                android:textColor="#FFF"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text="Average Retrieval Time: 9 min"
+                android:textColor="#FFF"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/start_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg"
+                android:gravity="center"
+                android:text="Next"
+                android:textColor="#000000"
+                android:textSize="14sp"></Button>
+
+            <Button
+                android:id="@+id/reset_btn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="2dp"
+                android:layout_weight="2"
+                android:background="@drawable/btn_bg"
+                android:gravity="center"
+                android:text="Reset"
+                android:textSize="14sp"
+                android:visibility="invisible"></Button>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
